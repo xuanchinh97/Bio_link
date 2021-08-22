@@ -61,6 +61,8 @@ i {
   height: 50px;
   margin-top: 20px;
   border: 1px solid #343;
+  box-shadow: 5px 5px 2px var(--pri-color);
+  background-color: rgba(255, 123, 0, 0.171);
 }
 
 .link1 a {
@@ -81,7 +83,15 @@ i {
 }
 .link1 li:hover {
   background: var(--sub-icon);
+  /* transform: background 1s; */
+  transition: all ease-in 0.5s;
 }
+
+.link1 li:hover span {
+  color: #fff;
+  transition: color ease-in 0.5s;
+}
+
 .link2 {
   display: flex;
   align-items: center;
@@ -102,4 +112,5 @@ i {
 }
 .link2 a:hover {
   color: var(--pri-icon);
+  transition: all 0.5s ease;
 }
